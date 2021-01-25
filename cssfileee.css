@@ -1,0 +1,329 @@
+*{ margin: 0; padding: 0; box-sizing: border-box; 
+    font-family: 'Lora', serif;}
+    .site-headers{
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(195deg, #000000, #0a44f1);
+        /*change colour*/
+    }
+    
+   body {
+       font-family:'Lora', serif;
+       line-height: 1.8;
+       height: 100vh;
+       overflow: hidden;
+   }
+
+   .container {
+       width: 100%;
+       height: 100%;
+       overflow-y: scroll;
+       scroll-behavior: smooth;
+       scroll-snap-type: y mandatory;
+   }
+
+   
+    
+   
+   .navbar {
+       position: fixed;
+       top:0;
+       z-index:1;
+       display: flex;
+       width: 100%;
+       height: 100px;
+       margin-top: 10px;
+       margin-left:50px;
+   }
+    
+   .navbar ul {
+       display: flex;
+       list-style: none;
+       width: 100%;
+       justify-content: center;
+   }
+
+   .navbar ul li {
+       margin: 0 2rem;
+       padding: 2rem;
+       
+   }
+   
+   .navbar ul li a {
+       text-decoration: none;
+       text-transform: uppercase;
+       color:aliceblue;
+       font-size: 23px;
+   }
+
+   .navbar ul li a:hover {
+       color: #093dc0;
+   }
+
+   section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      height:100vh;
+      scroll-snap-align: center;
+   }
+    
+   section h1 {
+       font-size: 4rem;
+   }
+ 
+   section p {
+       font-size:1.5rem;
+   }
+
+   nav{
+    width: 100%; height: 100px; display:flex; color:linen;  
+    background:#092468, #093dc0;
+}
+    
+
+    .grid-container{
+        margin:50px;
+        margin-right:70px;
+        display: grid;
+        grid-template-columns: 30%, 30%, 30%;
+        grid-gap:60px;
+        row-gap:55px;
+        width:54%;
+    }
+    
+   
+    
+            .leftside { width: 60%; height: 60%;
+             margin-top: -500px; margin-left: -1000px;}
+    
+            .rightside { width: 45%; height:300px; color:linen;
+            text-align: center; margin-top: -90px; padding: 60px; margin-left: 900px;}
+    
+            .rightside h1 { font-size:70px; font-weight: 900; text-transform: uppercase;}
+                   
+        
+    
+            .rightside p { font-size: 1.6rem; padding: 30px 0; background:#0e1e47, #093dc0;
+                
+            }
+    
+            .logo {
+                margin-top: 13px;
+                margin-left: -400px;
+                font-size: 27px;
+                
+            }
+            
+            
+
+            .images{
+                width:350px;
+                height:250px;
+                border-style: none;
+                border: 2.5px solid #f1f1f1;
+                
+            }
+
+            .productname{
+                font-size: 1.5em;
+                color: #f1f1f1;
+                
+            }
+
+            .prdctlnk{
+                text-decoration: none;
+            }
+
+            .prdctlnk :hover{
+                transition: 0.4 ease;
+                opacity: 0.35;
+                color: #041646;
+                cursor:pointer;
+
+            }
+
+            td{
+                padding:20px;
+                
+            }
+
+            
+            section#About {
+                background: linear-gradient(195deg, #000000, #4169e1);
+            }
+
+            .abtitle{
+                text-align: center;
+                margin-top: 300px;
+                
+                
+                
+            }
+
+            .abwords {
+                color:#f1f1f1;
+                width: 45%; 
+                height:600px;
+                text-align: left;
+                font-size: 1.6em;
+                margin-top:-400px;
+                margin-left: -60px;
+                
+                
+            }
+            
+            .workshop {
+                width:50%;
+                height:50%;
+                display:table;
+                margin-top:-400px;
+                margin-left:-1000px;
+               
+            }
+           
+           
+
+            section#Contact {
+                background: linear-gradient(195deg, #000000, #4169e1);
+            }
+
+            .contactus{
+                color:#f1f1f1;
+                text-align:center;
+                margin-top:150px;
+            }
+
+            .contactinfo{
+                color:#f1f1f1;
+                font-size:1.6em;
+                text-align:center;
+                margin-left:-200px;
+            }
+
+            .contactpic1{
+                margin-left: -1100px;
+                margin-top: -300px;
+            }
+
+            .contactpic2{
+                margin-left:1000px;
+                margin-top:-380px;
+            }
+
+           
+
+            .centerdiv{
+                height:100vh;
+                display:flex;
+                justify-content: center;
+                align-items:center;
+               
+            }
+
+            .centerdiv a{
+                height:140px;
+                width:140px;
+                background-color:solid rgb (0 ,0 , 0 );
+                border-radius:50px;
+                text-align:center;
+                margin:30px;
+                line-height:180px;
+                
+            }
+            
+            a i{
+                transition: all 0.9 linear;
+            }
+            a:hover i{
+               transform: scale(1.4);
+               color:#f1f1f1;
+            }
+
+            .fa-instagram{
+                color: #e84118;
+            }
+
+            .fa-twitter{
+               color: #0097e6;
+            }
+
+            .fa-facebook{
+                color:blue;
+            }
+
+        #outerbox
+        {
+          width:800px;
+          margin-left: 60px;
+          margin-top: 170px;
+          overflow: hidden;
+          
+    
+        }
+     
+        #sliderbox
+        {
+            position:relative;
+            width:2600px;
+            animation-name: Jamal;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;  /*doesnt work*/
+            }
+    
+        #sliderbox img
+        { 
+       float: left;  
+      
+        }
+    
+    
+        @keyframes Jamal {
+            0%
+            {
+            left: 0px;
+            }
+            20%
+            {
+            left:0px;
+            }
+            25%
+            {
+            left:-600px;
+            }
+            45%
+            {
+            left:-600px;
+            }
+            45%
+            {
+            left:-600px;    
+            }
+            50%
+            {
+            left:-1200px;    
+            }
+            70%
+            {
+            left:-1200px;
+            }
+            75%
+            {
+            left:-1800px;    
+            }
+            95%
+            {
+            left:-1800px;    
+            }
+            100%
+            {
+            left:-2400px; 
+            }
+            
+        }
+
+        
+    
